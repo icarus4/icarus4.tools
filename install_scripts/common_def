@@ -1,0 +1,30 @@
+#!/bin/sh
+
+_red() {
+	echo -e "\033[31m${1}\033[0m"
+}
+
+_green() {
+	echo -e "\033[32m${1}\033[0m"
+}
+
+_yellow() {
+	echo -e "\033[33m${1}\033[0m"
+}
+
+_print_finish_message() {
+	echo ""
+	_yellow " ______________________________"
+	_yellow "/ You are using icarus4.tools \\ "
+	_yellow "\ be productive!              /"
+	_yellow " -----------------------------"
+	_yellow "        \\   ^__^    v$VERSION "
+	_yellow "         \\  (oo)\\_______"
+	_yellow "            (__)\\       )\\/\\ "
+	_yellow "                ||----w |"
+	_yellow "                ||     ||"
+	_green  "         vv  v            vv"
+	_green  "     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+	echo -e "\n"
+}
+
