@@ -1,0 +1,20 @@
+[user]
+	name = icarus4
+	email = icarus4.chu@gmail.com
+[color]
+	ui = true
+[merge]
+	tool = opendiff
+[alias]
+	co = checkout
+	ci = commit
+	di = diff
+	s = status
+	b = branch
+	unstage = reset HEAD
+	uncommit = reset --soft HEAD^
+	l = log --pretty=oneline --abbrev-commit --graph --decorate
+[diff]
+	context = 5
+[core]
+	editor = /usr/bin/vim
