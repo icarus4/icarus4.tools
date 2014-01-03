@@ -10,16 +10,16 @@ mkdir -p "$BACKUP_DIR"
 COMMON_DEF="$SCRIPT_DIR/common_def"
 
 # source common functions & variables
-[[ -f $COMMON_DEF ]] && . $COMMON_DEF || ( echo "Cannot find common define fine, exit" && exit 1 )
+[[ -f $COMMON_DEF ]] && . $COMMON_DEF || ( echo "Cannot find common define file, exit" && exit 1 )
 
 # Install dot files
 cd $DOTFILE_DIR
 shopt -s dotglob
-rcfiles=`ls *`
+dotfiles=`ls *`
 
 # Check if file is existed
 cd $HOME
-for file in $rcfiles; do
+for file in $dotfiles; do
 	if [ -f "$file" ] || [ -L "$file" ]; then
 		_yellow "$HOME/$file is existed"
 		echo "1) Skip"
