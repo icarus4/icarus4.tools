@@ -1,6 +1,7 @@
 # .bash_profile
 
-export PATH=/Users/icarus4/bin:/Users/icarus4/usr/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export GREP_COLOR='31'
 
 # Function
@@ -37,8 +38,7 @@ export CLICOLOR=1
 #export TERM=xterm-color
 
 # Setup ls
-#alias ls=`ls -vG`
-#alias ls='ls --color'
+alias ls='ls --color'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
