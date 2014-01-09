@@ -4,6 +4,9 @@ export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/opt/coreutils/libexec/gnubin:/us
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export GREP_COLOR='31'
 
+# nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Function
 function git_branch {
 	ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
