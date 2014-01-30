@@ -1,0 +1,24 @@
+# common_shell_rc
+
+export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export GREP_COLOR='31'
+
+# nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# Source common shell functions
+#[[ -r ~/.common_shell_functions ]] . ~/.common_shell_functions
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Enable color
+export CLICOLOR=1
+
+# Setup color scheme for list
+#export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Enable color for iTerm
+#export TERM=xterm-color
+
