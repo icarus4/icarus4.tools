@@ -1,0 +1,13 @@
+# common_shell_functions
+
+# display git branch name
+function git_branch {
+	ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
+	echo "("${ref#refs/heads/}") ";
+}
+
+# wcgrep
+function wcg {
+	grep --color=always -R $1 * | grep -v .svn | grep -v "~" | grep -v ".pyc" | grep -v Binary
+}
+
