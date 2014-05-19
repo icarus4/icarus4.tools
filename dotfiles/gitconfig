@@ -9,6 +9,7 @@
 	co = checkout
 	ci = commit
 	di = diff
+	dic = diff --cached
 	s = status
 	b = branch
 	unstage = reset HEAD
