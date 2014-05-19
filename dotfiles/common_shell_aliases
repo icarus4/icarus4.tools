@@ -45,3 +45,6 @@ alias grep='grep --color=always'
 # SourceTree
 alias st='open -a SourceTree'
 
+# ctags
+alias tag='ctags -R -f .tags'
+
