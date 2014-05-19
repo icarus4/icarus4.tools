@@ -48,3 +48,6 @@ alias st='open -a SourceTree'
 # ctags
 alias tag='ctags -R -f .tags'
 
+# free for mac
+alias free-mac='top -l 1 | head -n 10 | grep PhysMem'
+
