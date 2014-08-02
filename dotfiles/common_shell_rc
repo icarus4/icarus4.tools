@@ -3,6 +3,7 @@
 export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export GREP_COLOR='1;32'
+export LANG=en_US.UTF-8
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh

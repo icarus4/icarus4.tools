@@ -45,6 +45,10 @@ alias grep='grep --color=always'
 # SourceTree
 alias st='open -a SourceTree'
 
+# PostgreSQL
+alias pg.start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg.stop='pg_ctl -D /usr/local/var/postgres stop -m fast'
+
 # ctags
 alias tag='ctags -R -f .tags'
 

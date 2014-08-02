@@ -11,3 +11,6 @@ function wcg {
 	grep --color=always -R $1 * | grep -v .svn | grep -v "~" | grep -v ".pyc" | grep -v Binary
 }
 
+# gitignore.io
+function gi() { curl http://www.gitignore.io/api/$@ ; }
+
